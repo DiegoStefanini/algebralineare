@@ -9,8 +9,7 @@ dispense/
 ├── capitoli/        # Capitoli delle dispense
 ├── main.typ         # File principale
 ├── template.typ     # Template Typst
-├── main.pdf         # PDF compilato
-└── esempio.pdf      # PDF di esempio
+└── main.pdf         # PDF compilato
 ```
 
 ## Tecnologie usate
