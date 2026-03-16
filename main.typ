@@ -154,3 +154,6 @@ Queste dispense sono concepite come un testo auto-consistente per lo studio dell
 
 // Prossimi capitoli:
 // #include "capitoli/capitolo03.typ"
+#include "capitoli/basi_e_dimensione.typ"
+#include "capitoli/sistemi_lineari.typ"
+#include "capitoli/isomorfismi.typ"
