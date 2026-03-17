@@ -312,11 +312,11 @@ Abbiamo visto che le coordinate di un vettore dipendono dalla base scelta, e che
   $ P_(B arrow.r B') = mat(1/2, 1/2; 1/2, -1/2) $
 
   Se $v = (3, 2)$ ha coordinate $x_B = (3, 2)$ nella base standard, le sue coordinate nella base $B'$ sono:
-  $ x_(B') = P_(B arrow.r B')^(-1) dot mat(3; 2) = mat(1, 1; 1, -1) dot mat(3; 2) = mat(5; 1) $
+  $ x_(B') = P_(B arrow.r B') dot x_B = mat(1/2, 1/2; 1/2, -1/2) mat(3; 2) = mat(5/2; 1/2) $
 
-  Verifica: $5 dot (1, 1) + 1 dot (1, -1) = (5, 5) + (1, -1) = (6, 4)$... Calcoliamo correttamente: $5/2 dot (1, 1) + 1/2 dot (1, -1) = (5/2, 5/2) + (1/2, -1/2) = (3, 2)$ $checkmark$.
+  Verifica: $5/2 dot (1, 1) + 1/2 dot (1, -1) = (5/2, 5/2) + (1/2, -1/2) = (3, 2)$ $checkmark$.
 
-  In effetti, $P_(B' arrow.r B)$ è la matrice le cui colonne sono i vettori di $B'$ espressi nella base standard: $P_(B' arrow.r B) = mat(1, 1; 1, -1)$, e $x_(B') = P_(B' arrow.r B)^(-1) dot x_B = mat(1/2, 1/2; 1/2, -1/2) mat(3; 2) = mat(5/2; 1/2)$.
+  Si noti che $P_(B' arrow.r B)$ è la matrice le cui colonne sono i vettori di $B'$ espressi nella base standard: $P_(B' arrow.r B) = mat(1, 1; 1, -1)$, e si ha $P_(B arrow.r B') = P_(B' arrow.r B)^(-1) = mat(1/2, 1/2; 1/2, -1/2)$, coerentemente con quanto calcolato sopra.
 ]
 
 #teorema("Cambio di base per la matrice associata")[
