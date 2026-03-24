@@ -20,7 +20,7 @@ Nel capitolo precedente abbiamo introdotto i concetti di sistema di generatori e
 
 Molti spazi vettoriali di uso comune possiedono una base naturale, detta *base standard* o *canonica*.
 
-#esempio(titolo: "Base standard di $KK^n$")[
+#esempio(titolo: [Base standard di $KK^n$])[
   In $KK^n$, la base standard è formata dai vettori:
   $
   e_1 = (1, 0, dots, 0), quad e_2 = (0, 1, dots, 0), quad dots, quad e_n = (0, 0, dots, 1)

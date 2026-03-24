@@ -61,7 +61,7 @@
 
 #align(center)[
   #text(size: 9pt, fill: gray)[
-    Per contribuire: #link("https://github.com/DiegoStefanini/unipi/algebra")
+    Per contribuire: #link("https://github.com/DiegoStefanini/algebralineare")
   ]
 
   #v(0.5cm)

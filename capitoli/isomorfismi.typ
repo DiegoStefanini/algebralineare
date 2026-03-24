@@ -131,7 +131,7 @@ Dal lemma seguono anche due conseguenze pratiche fondamentali.
   Si ripete il procedimento. Poiché a ogni passo il numero di vettori indipendenti aumenta di uno e non può superare $n$ (per il lemma di Steinitz), dopo al più $n - k$ passi si ottiene una base di $V$.
 ]
 
-#esempio(titolo: "Completamento in $RR^3$")[
+#esempio(titolo: [Completamento in $RR^3$])[
   Si voglia completare l'insieme indipendente ${v_1 = (1, 0, 1)}$ a una base di $RR^3$.
 
   Si cerca un vettore $v_2$ non multiplo di $v_1$. Scegliamo $v_2 = (0, 1, 0)$, che chiaramente non è multiplo di $v_1$. L'insieme ${v_1, v_2}$ è indipendente ma non genera $RR^3$ (servono 3 vettori). Si cerca un terzo vettore $v_3$ non appartenente a $"Span"(v_1, v_2)$: ad esempio $v_3 = (0, 0, 1)$. Si verifica che la matrice con queste righe ha rango 3:
@@ -294,14 +294,22 @@ Abbiamo visto che le coordinate di un vettore dipendono dalla base scelta, e che
 
 #teorema("Trasformazione delle coordinate")[
   Se $x_B$ è il vettore delle coordinate di $v in V$ rispetto alla base $B$, e $x_(B')$ è il vettore delle coordinate dello stesso $v$ rispetto alla base $B'$, allora:
-  $ x_(B') = P_(B arrow.r B')^(-1) dot x_B = P_(B' arrow.r B) dot x_B $
+  $ x_(B') = P_(B arrow.r B') dot x_B = (P_(B' arrow.r B))^(-1) dot x_B $
 ]
 
 #dimostrazione[
-  Per definizione di coordinate, $v = B dot x_B$ (dove intendiamo la combinazione lineare dei vettori di $B$ con coefficienti $x_B$). Poiché l'identità $"id"(v) = v$, le coordinate del risultato rispetto a $B'$ si ottengono moltiplicando per la matrice dell'identità da $B$ a $B'$. Tuttavia, la matrice $P_(B arrow.r B')$ trasforma le coordinate *nella direzione inversa*: essendo $P_(B arrow.r B')$ definita con le colonne che esprimono i vettori di $B$ in termini di $B'$, la relazione corretta è $x_B = P_(B arrow.r B') dot x_(B')$, da cui $x_(B') = P_(B arrow.r B')^(-1) dot x_B$.
+  Scriviamo $x_B = (x_1, dots, x_n)$. Allora
+  $
+  v = x_1 v_1 + dots + x_n v_n.
+  $
+  Poiché la colonna $j$-esima di $P_(B arrow.r B')$ contiene le coordinate di $v_j$ rispetto a $B'$, moltiplicare $P_(B arrow.r B')$ per $x_B$ equivale a combinare tali colonne con coefficienti $x_1, dots, x_n$. Si ottiene quindi esattamente il vettore delle coordinate di $v$ rispetto a $B'$:
+  $
+  x_(B') = P_(B arrow.r B') dot x_B.
+  $
+  Usando l'osservazione precedente, si ha anche $(P_(B' arrow.r B))^(-1) = P_(B arrow.r B')$, da cui la seconda uguaglianza.
 ]
 
-#esempio(titolo: "Cambio di base in $RR^2$")[
+#esempio(titolo: [Cambio di base in $RR^2$])[
   Consideriamo le basi $B = (e_1, e_2)$ (standard) e $B' = ((1, 1), (1, -1))$ di $RR^2$.
 
   Per trovare $P_(B arrow.r B')$, esprimiamo i vettori di $B$ come combinazione lineare di $B'$:

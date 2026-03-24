@@ -161,7 +161,7 @@ La nozione di indipendenza lineare cattura l'idea di assenza di ridondanza in un
   Le due definizioni sono complementari: un insieme di vettori è dipendente se e solo se non è indipendente. La terminologia riflette il significato intuitivo: vettori "dipendenti" sono tali che almeno uno di essi *dipende* dagli altri, nel senso che ne è combinazione lineare.
 ]
 
-#esempio(titolo: "Vettori indipendenti in $RR^3$")[
+#esempio(titolo: [Vettori indipendenti in $RR^3$])[
   I vettori $e_1 = (1, 0, 0)$, $e_2 = (0, 1, 0)$, $e_3 = (0, 0, 1)$ sono linearmente indipendenti. Infatti, se
   $
   lambda_1 (1, 0, 0) + lambda_2 (0, 1, 0) + lambda_3 (0, 0, 1) = (0, 0, 0)
@@ -169,7 +169,7 @@ La nozione di indipendenza lineare cattura l'idea di assenza di ridondanza in un
   allora $(lambda_1, lambda_2, lambda_3) = (0, 0, 0)$.
 ]
 
-#esempio(titolo: "Vettori dipendenti in $RR^3$")[
+#esempio(titolo: [Vettori dipendenti in $RR^3$])[
   I vettori $v_1 = (1, 2, 3)$, $v_2 = (4, 5, 6)$, $v_3 = (5, 7, 9)$ sono linearmente dipendenti, perché $v_3 = v_1 + v_2$, ovvero:
   $
   1 dot v_1 + 1 dot v_2 + (-1) dot v_3 = 0
@@ -223,7 +223,7 @@ Un sistema di generatori è un insieme di vettori che, attraverso combinazioni l
   Si dice anche che $v_1, dots, v_k$ *generano* $V$.
 ]
 
-#esempio(titolo: "Generatori canonici di $RR^2$")[
+#esempio(titolo: [Generatori canonici di $RR^2$])[
   I vettori $e_1 = (1, 0)$ e $e_2 = (0, 1)$ generano $RR^2$. Infatti, ogni vettore $(a, b) in RR^2$ si scrive come:
   $
   (a, b) = a(1, 0) + b(0, 1) = a e_1 + b e_2
@@ -231,7 +231,7 @@ Un sistema di generatori è un insieme di vettori che, attraverso combinazioni l
   Analogamente, i vettori $e_1 = (1, 0, dots, 0)$, $e_2 = (0, 1, dots, 0)$, $dots$, $e_n = (0, 0, dots, 1)$ generano $KK^n$.
 ]
 
-#esempio(titolo: "Generatori non canonici di $RR^2$")[
+#esempio(titolo: [Generatori non canonici di $RR^2$])[
   Anche $v_1 = (1, 1)$ e $v_2 = (1, -1)$ generano $RR^2$. Dato $(a, b) in RR^2$, si cercano $lambda_1, lambda_2$ tali che $lambda_1 (1, 1) + lambda_2 (1, -1) = (a, b)$, ottenendo il sistema:
   $
   cases(lambda_1 + lambda_2 = a, lambda_1 - lambda_2 = b) quad arrow.r.double quad lambda_1 = (a + b) / 2, quad lambda_2 = (a - b) / 2
